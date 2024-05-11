@@ -1,0 +1,164 @@
+body{
+    font-family: Poppins;
+    background-color: #48A30012;
+}
+
+.fullPage{
+    text-align: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size:64px;
+    line-height:96px;
+}
+
+h1 span{
+    color:#48A300;
+}
+
+p{
+    color:#858585;
+}
+
+form{
+    background-color: #FBFBFB;
+    border-radius: 15px;
+    padding:30px;
+    display:inline-block;
+    width:40%;
+    text-align: left;
+}
+
+.formheading{
+    display:flex;
+}
+
+.formheading h2{
+    font-size: 32px;
+    font-weight:700;
+}
+
+h2 img{
+    vertical-align: middle;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #48A300;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+
+
+  .errorline{
+    color: #FF5151;
+  }
+  
+  .optionList div{
+    border: 1px solid #0000001A;
+    padding:25px;
+    border-radius: 15px;
+    margin-top:50px;
+    font-size:16px;
+    line-height:24px;
+    background-color: #fff;
+    font-weight:600;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer{
+    text-align: center;
+    padding-top:30px;
+  }
+
+  .footer p b{
+    color:#000;
+  }
+
+  
+  
+  
+  /* Hide the default checkbox */
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Set the width and height to create a round shape */
+    height: 20px;
+    border-radius: 50%; /* Make it round */
+    border: 1px solid #ccc; /* Add border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative; /* Positioning for pseudo-element */
+  }
+  
+  /* Style for checked state */
+  input[type="checkbox"]:checked {
+    background-color: #48A300; /* Change background color when checked */
+  }
+  
+  /* Style for label */
+  label {
+    margin-left: 5px; /* Adjust spacing between checkbox and label */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+  /* Custom tick mark */
+input[type="checkbox"]::before {
+    content: '\2713'; /* Unicode for checkmark */
+    font-size: 16px; /* Adjust size of the checkmark */
+    color: white; /* Color of the checkmark */
+    position: absolute; /* Positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the checkmark */
+    display: none; /* Hide the checkmark by default */
+  }
+  
+  /* Display the tick mark when checked */
+  input[type="checkbox"]:checked::before {
+    display: block;
+  }
+
+ /* Css for textbox */
+  input[type="text"] {
+    display: block;
+    padding: 15px; /* Reduce padding for a more compact look */
+    width: 100%;
+    border:2px solid transparent;
+    border-bottom: 2px solid #48A300; /* Set border color and width */
+    background-color: transparent; /* Set background color */
+    transition: border-color 0.3s ease; /* Add transition effect for border color */
+    font-weight:bold;
+    font-size:25px;
+  }
+
+  /* Style for text field when focused */
+  input[type="text"]:focus {
+    outline: none; /* Remove default focus outline */
+    border:2px solid transparent;
+    border-bottom: 2px solid #48A300; /* Set border color and width */
+  }
+
+@media only screen and (max-width:767px){
+   form{
+      width: 80%;
+   }
+   input[type="text"]{
+    font-size:15px;
+   }
+}
+  
+  
